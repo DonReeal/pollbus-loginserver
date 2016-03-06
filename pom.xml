@@ -59,24 +59,6 @@
 			<scope>compile</scope>
 		</dependency>
 
-		<dependency>
-			<groupId>eu.dons.pollbus</groupId>
-			<artifactId>pollbus-id</artifactId>
-			<version>BETA</version>
-		</dependency>
-
-		<dependency>
-			<groupId>eu.dons.baratine</groupId>
-			<artifactId>persistence</artifactId>
-			<version>0.10.3</version>
-		</dependency>
-
-		<dependency>
-			<groupId>eu.dons.baratine</groupId>
-			<artifactId>rest</artifactId>
-			<version>0.10.3</version>
-		</dependency>
-
 		<!-- UTIL -->
 		<dependency>
 			<groupId>joda-time</groupId>
@@ -148,7 +130,6 @@
 
 	<build>
 		<plugins>
-
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.5</version>
