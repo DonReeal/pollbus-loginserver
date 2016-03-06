@@ -178,6 +178,8 @@
 			</plugin>
 
 			<plugin>
+				<!-- custom build of this plugin! -->
+				<!-- git an error cause BaratineCommandClient was in wrong package (baratine 0.10.3 ships cli in ... v5 ... package) -->
 				<groupId>io.baratine</groupId>
 				<artifactId>baratine-maven-plugin</artifactId>
 				<version>0.10.3</version>
