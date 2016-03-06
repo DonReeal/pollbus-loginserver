@@ -8,10 +8,10 @@ import io.baratine.core.Service;
 
 import pollbus.loginserver.hashauth.api.HashAuthService;
 
-@Service("public:///hashauth/bcrypt")
+@Service("public:///hashauth")
 public class HashAuthServiceBCrypt implements HashAuthService {
 
-	@Inject @Lookup("/workers:hashauth/bcrypt")
+	@Inject @Lookup("/workers:hashauth")
 	private HashAuthService worker;
 
 	@Override

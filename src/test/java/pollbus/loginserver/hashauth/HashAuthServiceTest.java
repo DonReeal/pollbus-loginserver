@@ -30,7 +30,7 @@ public class HashAuthServiceTest {
 	
 	private final Logger log = LoggerFactory.getLogger(this.getClass());
 	
-	@Inject @Lookup("/hashauth/bcrypt")
+	@Inject @Lookup("/hashauth")
 	private HashAuthServiceSync endpoint;
 	
 	

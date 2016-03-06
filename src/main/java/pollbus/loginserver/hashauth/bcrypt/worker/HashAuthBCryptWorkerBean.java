@@ -1,15 +1,14 @@
-package pollbus.loginserver.hashauth.testingconf;
+package pollbus.loginserver.hashauth.bcrypt.worker;
 
 import io.baratine.core.Result;
 import io.baratine.core.Service;
 import io.baratine.core.Workers;
 
 import pollbus.loginserver.hashauth.api.HashAuthService;
-import pollbus.loginserver.hashauth.bcrypt.worker.HashAuthBCryptWorker;
 
-@Workers(1)
+@Workers(4)
 @Service("/workers:hashauth")
-public final class HashAuthBCryptWorkerBean_SingleWorker implements HashAuthService {
+public final class HashAuthBCryptWorkerBean implements HashAuthService {
 
 	private HashAuthBCryptWorker workerImplementation = HashAuthBCryptWorker.builder()
 				.logRounds(3)
