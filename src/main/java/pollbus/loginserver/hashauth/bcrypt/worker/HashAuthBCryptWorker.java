@@ -21,7 +21,6 @@ public class HashAuthBCryptWorker implements HashAuthService {
 	@Override
 	public void checkHash(String plaintext, String previouslyHashedValue,  Result<Boolean> result){
 		result.complete(BCrypt.checkpw(plaintext, previouslyHashedValue));
-		
 	}
 
 }
